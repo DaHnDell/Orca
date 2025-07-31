@@ -3,13 +3,19 @@ import Home from './pages/Home'
 import About from './pages/About'
 import NotFound from './components/path/NotFound'
 import { Routes, Route } from 'react-router-dom'
+import Contact from './pages/Contact'
+import Service from './pages/Service'
 
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<DefaultLayout><Home /></DefaultLayout>} />
-      <Route path="/about" element={<About />} />
-      <Route path="*" element={<NotFound />} />
+      <Route path="/" element={<DefaultLayout />}>
+        <Route index element={<Home />} />
+        <Route path="service" element={<Service />} />
+        <Route path="about" element={<About />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
+      </Route>
     </Routes>
   )
 }
