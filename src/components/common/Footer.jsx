@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="max-w-screen-xl mx-auto grid md:grid-cols-2 gap-6">
         {/* 왼쪽 회사 정보 */}
         <div>
-          <img src="../src/assets/OrcaIT.png" alt="OrcaIT Logo" className="w-40 mb-4 " />
+          <img src="/src/assets/OrcaIT.png" alt="OrcaIT Logo" className="w-40 mb-4 " />
           <p className="text-sm leading-6">
             (주)오르카아이티 | 대표자 : 김승조<br />
             사업자등록번호 : 107-86-35726<br />
