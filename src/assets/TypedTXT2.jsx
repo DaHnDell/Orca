@@ -17,5 +17,5 @@ export default function TypedTXT2() {
     return () => typed.destroy();
   }, []);
 
-  return <span ref={el} className="text-blue-600 font-semibold" />;
+  return <span ref={el} className="text-blue-600 font-semibold font-shadow" />;
 }

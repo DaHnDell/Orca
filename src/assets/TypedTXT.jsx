@@ -6,7 +6,7 @@ export default function TypedTXT() {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ['OUR PASSION, YOUR POSSIBILITY'],
+      strings: ['OUR PASSION, YOUR ADVANTAGE'],
       typeSpeed: 45,
       backSpeed: 0,       
       backDelay: 999999, 
@@ -17,5 +17,5 @@ export default function TypedTXT() {
     return () => typed.destroy();
   }, []);
 
-  return <span ref={el} className="text-blue-600 font-semibold" />;
+  return <span ref={el} className="text-blue-600 font-semibold font-shadow" />;
 }
