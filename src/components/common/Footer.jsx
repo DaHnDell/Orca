@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-[#0057a5] text-white py-10 px-6">
+    <footer className="bg-[#0057a5] text-white py-10 px-6 shadow-2xl border-y-2">
       <div className="max-w-screen-xl mx-auto grid md:grid-cols-2 gap-6">
         {/* 왼쪽 회사 정보 */}
         <div>
@@ -46,7 +46,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="mt-10 text-center text-xs text-gray-300 border-t border-gray-600 pt-4">
+      <div className="mt-10 text-center text-xs text-gray-300 border-t border-white-600 pt-4">
         Copyright © 2025 OrcaIT CO.,Ltd. All Rights Reserved.
       </div>
     </footer>

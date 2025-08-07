@@ -12,7 +12,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-3">
             <HeaderLogo />
-            <h1 className="font-bold text-sky-800 text-xl">O r c a . I T</h1>
+            <h1 className="font-bold text-sky-800 text-xl font-shadow">O r c a . I T</h1>
           </div>
           <div className="md:hidden">
             <button
@@ -45,7 +45,7 @@ export default function Header() {
             </button>
           </div>
           <nav className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="text-gray-700 hover:text-blue-600 font-medium font-glow-hover">Solution</Link>
+            <Link to="/solution" className="text-gray-700 hover:text-blue-600 font-medium font-glow-hover">Solution</Link>
             <Link to="/service" className="text-gray-700 hover:text-blue-600 font-medium font-glow-hover">Service</Link>
             <Link to="/about" className="text-gray-700 hover:text-blue-600 font-medium font-glow-hover">About</Link>
             <Link to="/contact" className="text-gray-700 hover:text-blue-600 font-medium font-glow-hover">Contact</Link>
@@ -57,7 +57,7 @@ export default function Header() {
             }`}
         >
           <div className="flex flex-col space-y-2 py-2">
-            <Link to="/" onClick={() => setMenuOpen(false)}>Solution</Link>
+            <Link to="/solution" onClick={() => setMenuOpen(false)}>Solution</Link>
             <Link to="/service" onClick={() => setMenuOpen(false)}>Service</Link>
             <Link to="/about" onClick={() => setMenuOpen(false)}>About</Link>
             <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
